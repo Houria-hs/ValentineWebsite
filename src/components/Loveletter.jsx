@@ -226,7 +226,7 @@ const styles = {
     bottom: '10px',
     left: '2.5%',
     width: '95%',
-    height: '280px',
+    minHeight: '200px',
     backgroundColor: '#fff',
     borderRadius: '8px',
     boxShadow: '0 5px 20px rgba(0,0,0,0.1)',
