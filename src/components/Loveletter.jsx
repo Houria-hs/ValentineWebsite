@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
-import hugGif from "../assets/hug.gif"
+import hugGif from "../assets/hug.gif" 
 
 const LoveLetter = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   const [noScale, setNoScale] = useState(1);
   const [yesScale, setYesScale] = useState(1);
   const [isCelebrated, setIsCelebrated] = useState(false);
@@ -103,7 +104,7 @@ const LoveLetter = () => {
         {emojis.map(emoji => (
           <span
             key={emoji.id}
-            style={{
+            style={{ 
               ...styles.floatingEmoji,
               left: emoji.left,
               animation: `floatUp ${emoji.duration}s ease-out ${emoji.delay}s forwards`
@@ -131,7 +132,7 @@ const LoveLetter = () => {
               <div style={styles.letterContent}>
                 <h2 style={styles.title}>To the love of my life...</h2>
                 <p style={styles.text}>
-                  I'm so bad at writing short letters... but, I am so grateful to have you in my life.<br />
+                  You are the 'commit' I'll never revert. My life's best logic started the day I met you.<br />
                   <b>You're my favorite person to merge with.</b> ❤️
                 </p>
                 <p style={styles.question}>Will you be my Valentine?</p>
@@ -149,7 +150,7 @@ const LoveLetter = () => {
                   alt="Cute bears" 
                   style={styles.gifStyle} 
                 />
-                <h2 style={styles.celebrationTitle}>I Love You So Much</h2>
+                <h2 style={styles.celebrationTitle}>I Love You</h2>
                 <p style={styles.celebrationSubtext}> <b>Merge Request Accepted Forever.</b> </p>
               </div>
             )}
